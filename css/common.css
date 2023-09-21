@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'M PLUS Rounded 1c';
+    src: url(../fonts/MPLUSRounded1c-Bold.ttf);
+}
+
+html{
+    width: 980px;
+}
+
+body {
+    width: 980px;
+    font-family: 'M PLUS Rounded 1c';
+    margin: auto;
+    padding: 0px;
+    -webkit-text-size-adjust: 100%;
+    background-image: url(../img/common/igl2.gif);
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+div {
+    background-color: whitesmoke;
+}
+
+div.header {
+    display: flex;
+}
+
+div.header h1 {
+    margin: 20px;
+    padding: 0px;
+}
+
+/*グローバルナビゲーションの処理*/
+div.global_nav {
+    background-color: royalblue;    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+div.global_nav ul {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+}
+
+div.global_nav ul li {
+    display: table-cell;
+    min-width: 50px;
+    border-right: 1px solid #ccc;
+}
+
+div.global_nav ul li:first-child {
+    border-left: 1px solid #ccc;
+}
+
+div.global_nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+}
+
+div.global_nav ul li a:hover {
+    background-color: tomato;
+    border-bottom: 5px solid tomato;
+}
+
+div.global_nav ul li.current_location {
+    font-weight: bold;
+}
+
+div.global_nav ul li.current_location a {
+    border-bottom: 5px solid white;
+    color: white;
+}
+/*ここまで*/
+
+div.footer {
+    padding: 10px;
+    background-color: royalblue;
+    text-align: center;
+    color: white;
+}

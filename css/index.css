@@ -1,0 +1,36 @@
+div.counter{
+    display: flex;
+    margin:auto 20px auto auto;
+    padding: 0;
+    font-size: 110%;
+}
+
+div.information {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    min-height: 500px;
+}
+
+div.information h2 {
+    text-align: center;
+}
+
+div.news {
+    list-style: none;
+    height: 500px;
+    width: 450px;
+    border: thick double gray;
+}
+
+table.news_list {
+    text-decoration: none;
+    margin-left: 20px;
+    line-height: 2;
+}
+
+div.twitter {
+    height: 500px;
+    width: 450px;
+    border: thick double gray;
+}

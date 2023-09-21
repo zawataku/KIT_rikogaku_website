@@ -1,0 +1,36 @@
+div.body_background {
+    min-height: 800px;
+}
+
+div.body_background h2 {
+    text-align: center;
+    color: tomato;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+div.link_information {
+    margin: auto;
+    width: 670px;
+    margin-top: 30px;
+}
+
+p.link_information {
+    padding: 10px;
+    font-size: 110%;
+}
+
+div.link_information h2 {
+    margin: 0px;
+    color:tomato;
+}
+
+div.link_table {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+div.link_information img {
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4);
+}

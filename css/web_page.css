@@ -1,0 +1,37 @@
+div.body_background {
+    min-height: 800px;
+}
+
+div.title img{
+    width: 980px;
+}
+
+nav.page_nav h2{
+    text-align: center;
+    margin-top: 5px;
+}
+
+nav.page_nav{
+    margin: 10px 280px;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: tomato;
+}
+
+div.project_body{
+    margin: 50px 150px;
+    font-size: 110%;
+}
+
+div.project_body h1{
+    border-bottom: solid 4px tomato;
+    margin-top: 50px;
+}
+
+div.project_body img{
+    border-radius: 20px; 
+}
+
+.imgexp{
+    vertical-align: bottom;
+}

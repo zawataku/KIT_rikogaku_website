@@ -1,0 +1,19 @@
+div.body_background {
+    min-height: 800px;
+    text-align: center;
+}
+
+p.title {
+    margin: 0px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 500%;
+}
+
+p.message {
+    font-size: 150%;
+    line-height: 2em;
+    text-decoration: none;
+}
