@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: MPLUSRounded1c-Bold;
+    src: url(/fonts/MPLUSRounded1c-Bold.ttf);
+}
+
+* {
+    font-family: MPLUSRounded1c-Bold;
+    font-weight: inherit;
+    transform: rotateZ(0.03deg);
+}
+
+.drawer-side{
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .drawer-side::-webkit-scrollbar {
+    display:none;
+  }
