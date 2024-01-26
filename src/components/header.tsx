@@ -2,7 +2,7 @@ import React from "react";
 
 export const Header = () => {
     return (
-        <div className="drawer z-50 top-0 sticky">
+        <div className="drawer z-50 top-0">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 <div className="w-full navbar bg-base-300 h-20">
