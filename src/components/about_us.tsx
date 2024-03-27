@@ -23,10 +23,12 @@ export const About = () => {
                 viewport={{ once: false, amount: 0 }}
             >
                 <div className="hero-content flex-col lg:flex-row">
-                    <img src="/img/drever_PC.bmp" className="max-w-sm rounded-lg shadow-2xl" />
-                    <div>
-                        <h1 className="text-5xl font-bold">理工学基礎プロジェクトとは？</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <img src="/img/2020_rikougaku.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+                    <div className="about">
+                        <h1 className="text-5xl font-bold lg:block hidden">理工学基礎プロジェクトとは？</h1>
+                        <h1 className="text-3xl font-bold lg:hidden pb-2">理工学基礎プロジェクトとは？</h1>{/*スマホ用表示*/}
+                        <p className="pt-6 pb-4">1人1つの「身の周りから数理工学分野の意義あるテーマ」を見つけ，理学・工学の分野から設計，開発，作成することを通して，数理工の分野での技術力を身につけていく活動を行っています．</p>
+                        <p className="pb-6">学生と教職員が理学・工学の分野を通じて交流をすることで，分野や世代を超えた学生の成長につなげることを目的としています．</p>
                     </div>
                 </div>
 

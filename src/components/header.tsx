@@ -2,7 +2,7 @@ import React from "react";
 
 export const Header = () => {
     return (
-        <div className="drawer z-50 top-0">
+        <div className="drawer z-50 top-0 bg-white w-full fixed">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 <div className="w-full navbar bg-base-300 h-20">
@@ -15,12 +15,6 @@ export const Header = () => {
                     <div className="flex-1 px-2 mx-2 text-2xl hidden lg:block">金沢工業大学 理工学基礎プロジェクト</div>{/*PC表示時のコンテンツ*/}
                     <div className="flex-1 px-2 mx-2 text-md lg:hidden">金沢工業大学 理工学基礎プロジェクト</div>
 
-                    <div className="flex-none hidden lg:block">{/*PC表示時のコンテンツ*/}
-                        <ul className="menu menu-horizontal">
-                            <li><a>Navbar Item 1</a></li>
-                            <li><a>Navbar Item 2</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             

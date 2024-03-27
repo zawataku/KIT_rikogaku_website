@@ -5,6 +5,7 @@ import { scrollFadeIn } from "@/components/fadein";
 import Header from "@/components/header";
 import Top_Img from "@/components/top_img";
 import About from "@/components/about_us";
+import Product from "@/components/product";
 import Footer from "@/components/footer";
 
 
@@ -20,10 +21,9 @@ export const Home = () => {
         <Header></Header>
       </div>
 
-      <section>
         <Top_Img></Top_Img>
         <About></About>
-      </section>
+        <Product></Product>
 
       <Footer></Footer>
     </div>
