@@ -5,7 +5,11 @@ import Wrap from "@/components/index/wrap";
 import Header from "@/components/common/header";
 import Title from "@/components/index/title";
 import Topimg from "@/components/index/topimg";
+import About from "@/components/about/about";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   useEffect(() => {
@@ -28,6 +32,10 @@ export default function Home() {
     });
     gsap.set(".title span", {
       opacity: 0,
+      y: -50,
+    });
+    gsap.set(".about", {
+      autoAlpha: 0,
       y: -50,
     });
 
@@ -53,6 +61,21 @@ export default function Home() {
         opacity: 1,
         y: 0,
       });
+
+    const TL2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".about",
+        start: "top center",
+        end: "bottom top",
+      },
+    });
+
+    TL2.to(".about", {
+      duration: 2, // アニメーションの速度を遅くするためにdurationを長く設定
+      autoAlpha: 1,
+      y: 0,
+      stagger: 0.6, // スムーズにアニメーションを実行するためにstaggerの値を調整
+    });
   }, []);
 
   return (
@@ -62,6 +85,7 @@ export default function Home() {
       <Header />
       <Title />
       <Topimg />
+      <About />
     </main>
   );
 }
