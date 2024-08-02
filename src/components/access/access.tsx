@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Access() {
     return (
-        <div className="w-full bg-neutral-100 text-black py-40 px-20">
+        <div className="w-full bg-neutral-100 text-black pt-40 pb-20 px-20">
             <div className="w-full text-center">
                 <p className="my-5 text-5xl">アクセス</p>
                 <p className="my-5 text-2xl">理工学基礎プロジェクトにぜひお越しください</p>
