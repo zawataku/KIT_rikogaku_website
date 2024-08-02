@@ -10,6 +10,7 @@ import Title from "@/components/index/title";
 import Topimg from "@/components/index/topimg";
 import About from "@/components/about/about";
 import Activity from "@/components/activity/activity";
+import Access from "@/components/access/access";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -111,6 +112,7 @@ export default function Home() {
       <Topimg />
       <About />
       <Activity />
+      <Access />
     </main>
   );
 }
