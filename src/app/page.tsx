@@ -1,18 +1,23 @@
 "use client"
 import React, { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import Loading from "@/components/index/loading";
 import Wrap from "@/components/index/wrap";
 import Header from "@/components/common/header";
 import Title from "@/components/index/title";
 import Topimg from "@/components/index/topimg";
 import About from "@/components/about/about";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Activity from "@/components/activity/activity";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
     (function () {
       const titles = document.querySelectorAll(".title h1");
       titles.forEach((title) => {
@@ -36,7 +41,11 @@ export default function Home() {
     });
     gsap.set(".about", {
       autoAlpha: 0,
-      y: -50,
+      y: 50,
+    });
+    gsap.set(".activity", {
+      autoAlpha: 0,
+      x: 100,
     });
 
     const TL = gsap.timeline();
@@ -71,10 +80,25 @@ export default function Home() {
     });
 
     TL2.to(".about", {
-      duration: 2, // アニメーションの速度を遅くするためにdurationを長く設定
+      duration: 0.8, // アニメーションの速度を遅くするためにdurationを長く設定
       autoAlpha: 1,
       y: 0,
-      stagger: 0.6, // スムーズにアニメーションを実行するためにstaggerの値を調整
+      stagger: 0.2, // スムーズにアニメーションを実行するためにstaggerの値を調整
+    });
+
+    const TL3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".activity",
+        start: "top center",
+        end: "bottom top",
+      },
+    });
+
+    TL3.to(".activity", {
+      duration: 0.8, // アニメーションの速度を遅くするためにdurationを長く設定
+      autoAlpha: 1,
+      x: 0,
+      stagger: 0.2, // スムーズにアニメーションを実行するためにstaggerの値を調整
     });
   }, []);
 
@@ -86,6 +110,7 @@ export default function Home() {
       <Title />
       <Topimg />
       <About />
+      <Activity />
     </main>
   );
 }
