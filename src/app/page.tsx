@@ -11,6 +11,7 @@ import Topimg from "@/components/index/topimg";
 import About from "@/components/about/about";
 import Activity from "@/components/activity/activity";
 import Access from "@/components/access/access";
+import Footer from "@/components/common/footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -113,6 +114,7 @@ export default function Home() {
       <About />
       <Activity />
       <Access />
+      <Footer />
     </main>
   );
 }
