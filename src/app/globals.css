@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: ZenMaru;
-    src: url(/font/ZenMaruGothic-Bold.ttf);
+    src: url(/font/ZenMaruGothic-Bold.woff2) format("woff2");
 }
 
 *{
