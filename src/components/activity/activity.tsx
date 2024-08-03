@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Activity() {
+    const basePath = process.env.BASE_PATH || '';
     return (
         <div className="w-full bg-white px-5 py-40 lg:px-20" id="activity">
             <div className="w-full text-center">
@@ -9,7 +10,7 @@ export default function Activity() {
             </div>
             <div className="mb-10 mt-20 lg:mb-32 lg:flex">
                 <div className="my-auto w-full lg:px-5">
-                    <img className="rounded-3xl" src="/img/activity.webp" alt="活動内容" />
+                    <img className="rounded-3xl" src={`${basePath}/img/activity.webp`} alt="活動内容" />
                 </div>
                 <div className="mt-10 hidden w-full lg:my-auto lg:block lg:px-5">
                     <ul className="text-xl">

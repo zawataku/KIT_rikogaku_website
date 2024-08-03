@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function About() {
+    const basePath = process.env.BASE_PATH || '';
     return (
         <div className="w-full bg-blue-900 pb-20 pt-40 lg:py-40" id="about">
             <div className="about hidden text-center text-2xl text-white lg:block">
@@ -16,7 +17,7 @@ export default function About() {
                 <p className="my-3">創造の喜びを体感せよ。</p>
             </div>
             <div className="about mt-20 flex justify-center px-5 lg:my-20">
-                <img className="mx-auto w-full rounded-3xl lg:w-1/2" src="/img/2020_rikogaku.webp" alt="理工学基礎プロジェクト2020年"/>
+                <img className="mx-auto w-full rounded-3xl lg:w-1/2" src={`${basePath}/img/2020_rikogaku.webp`} alt="理工学基礎プロジェクト2020年" />
             </div>
         </div>
     )
