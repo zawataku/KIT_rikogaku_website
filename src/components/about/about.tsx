@@ -16,7 +16,7 @@ export default function About() {
                 <p className="my-3">創造の喜びを体感せよ。</p>
             </div>
             <div className="about flex justify-center mt-20 lg:my-20 px-5">
-                <img className="w-full lg:w-1/2 mx-auto rounded-3xl" src="/img/2020_rikougaku.jpg" alt="理工学基礎プロジェクト2020年"/>
+                <img className="w-full lg:w-1/2 mx-auto rounded-3xl" src="/img/2020_rikogaku.webp" alt="理工学基礎プロジェクト2020年"/>
             </div>
         </div>
     )

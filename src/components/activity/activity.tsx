@@ -9,7 +9,7 @@ export default function Activity() {
             </div>
             <div className="lg:flex mt-20 mb-10 lg:mb-32">
                 <div className="w-full lg:px-5 my-auto">
-                    <img className="rounded-3xl" src="/img/activity.jpg" alt="活動内容" />
+                    <img className="rounded-3xl" src="/img/activity.webp" alt="活動内容" />
                 </div>
                 <div className="hidden lg:block w-full lg:px-5 lg:my-auto mt-10">
                     <ul className="text-xl">
