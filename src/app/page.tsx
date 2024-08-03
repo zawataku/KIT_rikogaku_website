@@ -49,6 +49,10 @@ export default function Home() {
       autoAlpha: 0,
       x: 100,
     });
+    gsap.set(".activity_mb", {
+      autoAlpha: 0,
+      y: 50,
+    });
 
     const TL = gsap.timeline();
     TL.to(".loading", {
@@ -100,6 +104,21 @@ export default function Home() {
       duration: 0.8, // アニメーションの速度を遅くするためにdurationを長く設定
       autoAlpha: 1,
       x: 0,
+      stagger: 0.2, // スムーズにアニメーションを実行するためにstaggerの値を調整
+    });
+
+    const TL4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".activity_mb",
+        start: "top center",
+        end: "bottom top",
+      },
+    });
+
+    TL4.to(".activity_mb", {
+      duration: 0.8, // アニメーションの速度を遅くするためにdurationを長く設定
+      autoAlpha: 1,
+      y: 0,
       stagger: 0.2, // スムーズにアニメーションを実行するためにstaggerの値を調整
     });
   }, []);
