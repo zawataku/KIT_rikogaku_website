@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Topimg() {
   return (
-    <div className="relative w-full h-screen">
-      <img className="absolute w-full h-full object-cover opacity-70" src="/img/top.webp" alt="トップ画像" />
-      <div className="bg-black absolute top-0 left-0 w-full h-full opacity-50"></div>
+    <div className="relative h-screen w-full">
+      <img className="absolute size-full object-cover opacity-70" src="/img/top.webp" alt="トップ画像" />
+      <div className="absolute left-0 top-0 size-full bg-black opacity-50"></div>
     </div>
   );
 }
