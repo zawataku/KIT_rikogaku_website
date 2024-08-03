@@ -16,22 +16,24 @@ import Footer from "@/components/common/footer";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  useEffect(() => {
-    setTimeout(() => {
+    useEffect(() => {
       window.scrollTo(0, 0);
-    }, 0);
-    (function () {
-      const titles = document.querySelectorAll(".title h1");
-      titles.forEach((title) => {
-        let newText = "";
-        const text = title.textContent;
-        const result = text.split("");
-        for (let i = 0; i < result.length; i++) {
-          newText += `<span>${result[i]}</span>`;
-        }
-        title.innerHTML = newText;
-      });
-    })();
+  
+      (function () {
+        const titles = document.querySelectorAll(".title h1");
+        titles.forEach((title) => {
+          let newText = "";
+          const text = title.textContent;
+          if (text) { // textがnullでないことを確認
+            const result = text.split("");
+            for (let i = 0; i < result.length; i++) {
+              newText += `<span>${result[i]}</span>`;
+            }
+            title.innerHTML = newText;
+          }
+        });
+      })();
+  
 
     gsap.set(".header", {
       opacity: 0,
